@@ -132,6 +132,7 @@ const Navbar: React.FC = () => {
 
   // Set the width of the suggestion dropdown to be equal to the width of the input
   useEffect(() => {
+    console.log(posts);
     if (inputRef.current) {
       const inputWidth = inputRef.current.offsetWidth;
       const dropdown = document.getElementById("suggestion-dropdown");
